@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    background: #000;
+    min-height: 97vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+}
+
+.content h2 {
+    animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-top: 5px;
+    color: red;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, -50px); }
+	50% { transform: translate(0, 50px); }
+	100% { transform: translate(0, -50px); }
+}
